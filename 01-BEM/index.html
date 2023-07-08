@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BEM en CSS</title>
+  </head>
+  <body>
+    <section class="inner-width">
+      <h1>Metodologia BEM</h1>
+      <p>
+        BEM es una metologia de trabajo dentro de CSS y <br />
+        <u><strong>Esto significa:</strong></u>
+      </p>
+      <ul>
+        <li>Bloque</li>
+        <li>Elemento</li>
+        <li>Modificador</li>
+      </ul>
+      <p>
+        Es una forma de escribir los selectores CSS de una forma mas rapido y
+        sin tender a la repeteicion de codigo, selectores mas directos. Sera mas
+        facil seleccionar los elementos de nuestro DOM.
+      </p>
+    </section>
+    <div>
+      <!-- Forma clasica de trabajar con clases -->
+      <!-- 
+       <section class="cards inner-width">
+        <div class="card">
+          <h3>Tarjeta 1</h3>
+          <p>Contenido tarjeta 1</p>
+          <a href="#">VerDanTweb.com</a>
+        </div>
+        <div class="card">
+          <h3>Tarjeta 2</h3>
+          <p>Contenido tarjeta 2</p>
+          <a href="#">VerDanTweb.com</a>
+        </div>
+        <div class="card">
+          <h3>Tarjeta 3</h3>
+          <p>Contenido tarjeta 3</p>
+          <a href="#">VerDanTweb.com</a>
+        </div>
+        <div class="card">
+          <h3>Tarjeta 4</h3>
+          <p>Contenido tarjeta 4</p>
+          <a href="#">VerDanTweb.com</a>
+        </div>
+      </section> -->
+      <!-- Metodologia BEM -->
+      <section class="cards inner-width">
+        <article class="cards__card">
+          <h3 class="card__title">Tarjeta 1</h3>
+          <p class="card__content">Contenido tarjeta 1
+            <span class="card__readmore">Leer Mas</span>
+          </p>
+          <a href="" class="card__link">VerDanTweb.com</a>
+        </article>
+        <article class="cards__card">
+          <h3 class="card__title">Tarjeta 2</h3>
+          <p class="card__content">Contenido tarjeta 2
+            <span class="card__readmore">Leer Mas</span>
+          </p>
+          <a href="" class="card__link card__link--red">VerDanTweb.com</a>
+        </article>
+        <article class="cards__card">
+          <h3 class="card__title">Tarjeta 3</h3>
+          <p class="card__content">Contenido tarjeta 3
+            <span class="card__readmore">Leer Mas</span>
+          </p>
+          <a href="" class="card__link">VerDanTweb.com</a>
+        </article>
+        <article class="cards__card">
+          <h3 class="card__title">Tarjeta 4</h3>
+          <p class="card__content">Contenido tarjeta 4
+            <span class="card__readmore">Leer Mas</span>
+          </p>
+          <a href="" class="card__link">VerDanTweb.com</a>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

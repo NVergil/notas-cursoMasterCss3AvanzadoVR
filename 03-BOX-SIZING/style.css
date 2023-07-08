@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* Utilizamos Border-Box para evitar que con paddings
+nuestro elemento crezca de tamaño superior al indicado */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  width: 300px;
+  height: 180px;
+  margin: 0 auto;
+  /* padding: 10px; */
+  border: 1px solid lightslategray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+  background: cadetblue;
+  color: #fff;
+}
