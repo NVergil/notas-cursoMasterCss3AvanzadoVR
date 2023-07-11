@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/scroll.css">
     <link rel="stylesheet" href="styles/style.css" />
     <title>Portafolio - Curso Udemy - VerDanT</title>
   </head>
@@ -29,7 +30,7 @@
               />
             </div>
             <h2 class="user-info__name">VerDanT</h2>
-            <h4 class="user-info__job">Web Developer</h4>
+            <h3 class="user-info__job">Web Developer</h3>
           </div>
           <!-- Navigation Menu -->
           <nav class="layout__menu">
@@ -105,9 +106,9 @@
       <main class="layout__content">
         <section class="content__page content__about">
           <header class="about__header">
-            <h2 class="about__title">
+            <h1 class="about__title">
               About <span class="title__color">Me</span>
-            </h2>
+            </h1>
           </header>
           <section class="about__personal-info">
             <article class="personal-info__bio">
@@ -148,9 +149,9 @@
 
           <section class="about__services">
             <header class="services__header">
-              <h3 class="services__title">
+              <h2 class="services__title">
                 What I <span class="title__color">Do</span>
-              </h3>
+              </h2>
             </header>
 
             <div class="services__container">
@@ -159,7 +160,7 @@
                   <i class="fa-solid fa-code"></i>
                 </div>
                 <div class="service__content">
-                  <h4 class="service__title">Programing</h4>
+                  <h3 class="service__title">Programing</h3>
                   <p class="service__description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Animi similique magnam illum, veritatis, maxime omnis totam
@@ -171,7 +172,7 @@
                   <i class="fa-solid fa-chalkboard-teacher"></i>
                 </div>
                 <div class="service__content">
-                  <h4 class="service__title">Education</h4>
+                  <h3 class="service__title">Education</h3>
                   <p class="service__description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Animi similique magnam illum, veritatis, maxime omnis totam
@@ -183,7 +184,7 @@
                   <i class="fa-solid fa-computer"></i>
                 </div>
                 <div class="service__content">
-                  <h4 class="service__title">Web Development</h4>
+                  <h3 class="service__title">Web Development</h3>
                   <p class="service__description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Animi similique magnam illum, veritatis, maxime omnis totam
@@ -195,7 +196,7 @@
                   <i class="fa-solid fa-terminal"></i>
                 </div>
                 <div class="service__content">
-                  <h4 class="service__title">IT Support</h4>
+                  <h3 class="service__title">IT Support</h3>
                   <p class="service__description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Animi similique magnam illum, veritatis, maxime omnis totam
@@ -207,7 +208,7 @@
 
           <section class="about__reviews">
             <header class="reviews__header">
-              <h3 class="reviews__title">Reviews</h3>
+              <h2 class="reviews__title">Reviews</h2>
             </header>
 
             <div class="reviews__container">
@@ -231,7 +232,7 @@
                 
                 <div class="review__author">
                   <div class="review__author-info">
-                    <h4 class="review__name">Ana Lopez</h4>
+                    <h3 class="review__name">Ana Lopez</h3>
                     <h5 class="review__company">Developers S.A</h5>
                   </div>
 
@@ -261,7 +262,7 @@
                 
                 <div class="review__author">
                   <div class="review__author-info">
-                    <h4 class="review__name">Ruben Martinez</h4>
+                    <h3 class="review__name">Ruben Martinez</h3>
                     <h5 class="review__company">Full Stack S.L</h5>
                   </div>
 
@@ -273,6 +274,153 @@
               </article>
             </div>
           </section>
+
+          <section class="about__clients">
+            <header class="clients__header">
+              <h2 class="clients__title">Clientes</h2>
+            </header>
+
+            <div class="clients__container">
+
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img src="assets/img/cliente-1.png" alt="Logo cliente" class="clients__img">
+                </a>
+              </article>
+              
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img src="assets/img/cliente-2.png" alt="Logo cliente" class="clients__img">
+                </a>
+              </article>
+              
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img src="assets/img/cliente-3.png" alt="Logo cliente" class="clients__img">
+                </a>
+              </article>
+              
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img src="assets/img/cliente-4.png" alt="Logo cliente" class="clients__img">
+                </a>
+              </article>
+              
+              <article class="clients__item">
+                <a href="#" class="clients__link">
+                  <img src="assets/img/cliente-5.png" alt="Logo cliente" class="clients__img">
+                </a>
+              </article>
+              
+            </div>
+            
+          </section>
+
+          <section class="about__price">
+
+            <header class="prices__header">
+              <h2 class="prices__title">Prices</h2>
+            </header>
+
+            <div class="prices__container">
+
+              <article class="prices__box">
+
+                <div class="prices__subtitle">
+                  <span class="prices__text">Normal</span>
+                </div>
+
+                <div class="prices__price">
+                  <span class="prices__number">20$</span>
+                  <small class="prices__advice">For month</small>
+                </div>
+
+                <div class="prices__buy">
+                  <a href="#" class="prices__btn">
+                    Free Trial
+                  </a>
+                </div>
+
+                <div class="prices__reward">
+                  A web development course
+                </div>
+
+                <div class="prices__reward">
+                  Questions and concerns support
+                </div>
+
+                <div class="prices__reward">
+                  Completion Certificate                
+                </div>
+
+              </article>
+
+              <article class="prices__box">
+
+                <div class="prices__subtitle">
+                  <span class="prices__text">Premium</span>
+                </div>
+
+                <div class="prices__price">
+                  <span class="prices__number">69$</span>
+                  <small class="prices__advice">For month</small>
+                </div>
+
+                <div class="prices__buy">
+                  <a href="#" class="prices__btn">
+                    Free Trial
+                  </a>
+                </div>
+
+                <div class="prices__reward">
+                  5 web development courses
+                </div>
+
+                <div class="prices__reward">
+                  Priority support for questions or concerns
+                </div>
+
+                <div class="prices__reward">
+                  Completion Certificate                
+                </div>
+
+              </article>
+
+
+            </div>
+
+          </section>
+
+          <section class="about__extra">
+
+            <header class="extra__header">
+              <h2 class="extra__title"><span class="title__color">Extra</span> Information</h2>
+            </header>
+
+            <div class="extra__container">
+
+              <article class="extra__info">
+                <i class="extra__icon fa-solid fa-heart"></i>
+                <h4 class="extra__subtitle">Satisfied students</h4>
+                <span class="extra__quantity">375.000</span>
+              </article>
+
+              <article class="extra__info">
+                <i class="extra__icon fa-solid fa-clock"></i>
+                <h4 class="extra__subtitle">Hours of content</h4>
+                <span class="extra__quantity">+800</span>
+              </article>
+
+              <article class="extra__info">
+                <i class="extra__icon fa-solid fa-star"></i>
+                <h4 class="extra__subtitle">Puntiation</h4>
+                <span class="extra__quantity">10</span>
+              </article>
+
+            </div>
+
+          </section>
+
         </section>
       </main>
     </div>
