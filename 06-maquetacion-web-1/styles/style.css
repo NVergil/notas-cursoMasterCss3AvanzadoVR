@@ -11,6 +11,9 @@
   --titles-color: #222222;
   --subtitles-color: #888;
   --text-color: #555;
+
+  --color-border-reviews: #E5E6E7;
+  --color-company: #A5A6A7;
 }
 
 /* General Styles */
@@ -369,25 +372,37 @@ body {
   font-weight: 600;
 }
 
-/* about services */
+/* about services, reviews, clients, price */
 
-.about__services {
+.about__services,
+.about__reviews,
+.about__clients,
+.about__prices {
   width: 100%;
   margin-bottom: 3rem;
 }
 
-.services__header {
+.services__header,
+.reviews__header,
+.clients__header,
+.prices__header {
   display: inline-block;
   position: relative;
   padding-right: 1.2rem;
   margin-bottom: 2.5rem;
 }
 
-.services__title {
+.services__title,
+.reviews__title,
+.clients__title,
+.prices__title {
   font-size: 2.1rem;
 }
 
-.services__title::after {
+.services__title::after,
+.reviews__title::after,
+.clients__title::after,
+.prices__title::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -430,4 +445,202 @@ body {
 .service__description {
   font-size: 1.5rem;
   text-align: justify;
+}
+
+/* Reviews */
+
+.reviews__container {
+  width: 100%;
+  padding-top: 4.5rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.reviews__review {
+  flex-basis: calc(50% - 2.5rem);
+
+  border: 2px solid var(--color-border-reviews);
+  border-radius: 2rem;
+  padding-inline: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.review__img-container {
+  width: 100%;
+}
+
+.review__img {
+  max-width: 9rem;
+  max-height: 9rem;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-top: -4.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.review__description {
+  margin-bottom: 1rem;
+}
+
+.review__text {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.review__author {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review__name {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.review__company {
+  color: var(--color-company);
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.review__icon {
+  font-size: 4rem;
+  opacity: 0.5;
+  color: var(--secondary-color);
+}
+
+/* Clients */
+
+.about__clients {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.clients__header {
+  margin-bottom: 3rem;
+}
+
+.clients__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.clients__link {
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  transition: opacity 150ms ease-in-out;
+}
+
+.clients__link:hover {
+  opacity: 1;
+}
+
+.clients__img {
+  width: 145px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Prices */
+
+.prices__container {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.prices__box {
+  flex-basis: 50%;
+  height: 100%;
+  max-width: 400px;
+  width: 100%;
+
+  padding: 3rem;
+  border: 2px solid var(--color-border-reviews);
+  border-radius: 1.5rem;
+  text-align: center;
+  transition: all 150ms ease-in-out;
+}
+
+.prices__box:hover {
+  box-shadow: 0 18px 24px -15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem);
+}
+
+.prices__subtitle {
+  margin-bottom: 3rem;
+}
+
+.prices__text {
+  position: relative;
+  display: inline-block;
+}
+
+.prices__text::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+
+  background-color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+.prices__box:hover .prices__text::after {
+  width: 100%;
+}
+
+.prices__price {
+  padding-bottom: 1rem;
+}
+
+.prices__number {
+  display: block;
+  font-size: 4.2rem;
+  line-height: 1;
+  color: var(--titles-color);
+}
+
+.prices__advice {
+  display: block;
+  color: var(--subtitles-color);
+}
+
+.prices__buy {
+  padding-block: 2.5rem;
+}
+
+.prices__btn {
+  display: inline-block;
+  padding: 1.2rem 3.1rem;
+  
+  border: 2px solid var(--color-border-reviews);
+  border-radius: 3rem;
+  box-shadow: 0 10px 10px -8px var(--color-border-reviews);
+
+  transition: all 225ms ease-in-out;
+}
+
+.prices__btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--principal-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.prices__reward {
+  font-size: 1.4rem;
+  padding: 0.6rem 0;
 }
